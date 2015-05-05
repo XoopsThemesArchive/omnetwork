@@ -1,0 +1,66 @@
+									<!-- USER NAVIGATION BAR START -->
+					<div id="navbar">
+        				<table cellspacing="0" cellpadding="0" id="menu1" class="NavMenu">
+										<tr>
+								<{if $xoops_isuser == 1}>
+								    <td rowspan="5">
+    								    <a class="button" href="javascript:void(0)">Usermenu</a>
+    								        <div class="section">
+        									<a class="item" href="<{$xoops_url}>/user.php">Profile</a>
+                                            <a class="item" href="<{$xoops_url}>/edituser.php">Edit profile</a>
+                                            <a class="item" href="<{$xoops_url}>/notifications.php">Notifications</a>
+                                            <a class="item" href="<{$xoops_url}>/user.php?op=logout">Logout</a>
+                                            <{if $xoops_isadmin}>
+                                                <a class="item" href="<{$xoops_url}>/admin.php">Administration</a>
+                                            <{/if}>
+                                        </div>
+                                    </td>
+                                    <{/if}>
+								    <td rowspan="5">
+    								    	<a class="button" href="javascript:void(0)">menu1</a>
+    								        <div class="section">
+        									<a class="item" href="<{$xoops_url}>/index.php">menu1</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu1</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu1</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu1</a>
+                                        </div></td>
+								    <td rowspan="5">
+    								    	<a class="button" href="javascript:void(0)">menu2</a>
+    								        <div class="section">
+        									<a class="item" href="<{$xoops_url}>/index.php">menu2</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu2</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu2</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu2</a>
+                                        </div></td>
+								    <td rowspan="5">
+    								    	<a class="button" href="javascript:void(0)">menu3</a>
+    								        <div class="section">
+        									<a class="item" href="<{$xoops_url}>/index.php">menu3</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu3</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu3</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu3</a>
+                                        </div></td>
+								    <td rowspan="5">
+    								    	<a class="button" href="javascript:void(0)">menu4</a>
+    								        <div class="section">
+        									<a class="item" href="<{$xoops_url}>/index.php">menu4</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu4</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu4</a>
+                                            <a class="item" href="<{$xoops_url}>/index.php">menu4</a>
+                                        </div></td>
+        					</tr>
+
+
+							<td id="search">
+										<form style="margin: 0px;" action="<{$xoops_url}>/search.php" method="get">
+  											<input type="text" name="query" size="14" />
+											<input type="hidden" name="action" value="results" />
+											<input class="formButton" type="submit" value="<{$smarty.const._SEARCH}>" />
+  											<{if $smarty.const.modid > 1}>
+    										<input type="hidden" name="mids[]" value="<{$smarty.const.modid}>" />
+  											<{/if}>
+										</form>
+									</td>
+        					</tr>
+        				</table>
+    				</div>
